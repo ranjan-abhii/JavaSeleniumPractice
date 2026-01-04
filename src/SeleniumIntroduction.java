@@ -12,10 +12,14 @@ public class SeleniumIntroduction {
 		WebDriver driver = new ChromeDriver();
 		
 		//Opening URL
-		driver.get("https://www.google.com/");
+		driver.get("https://rahulshettyacademy.com/");
 		driver.manage().window().maximize();
 		
-		driver.findElement(By.xpath("//textarea[@name=\"q\"]")).sendKeys("Amazon", Keys.ENTER);
+		System.out.println(driver.getTitle());
+		System.out.println(driver.getCurrentUrl());
+		
+		driver.close();    //Close will be used when only one tab is being used and needs to be closed.
+//		driver.quit();   //Quit will be used where multiple tabs gets opened and we have to close all 
 		
 	}
 
