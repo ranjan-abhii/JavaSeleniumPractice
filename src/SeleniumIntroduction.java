@@ -8,6 +8,7 @@ public class SeleniumIntroduction {
 	public static void main(String[] args) {
 		
 		//Invoking Browser
+		System.setProperty("webdriver.chrome.driver", "/Users/abhiiperiperi/Documents/chromedriver");
 		WebDriver driver = new ChromeDriver();
 		
 		//Opening URL
